@@ -26,5 +26,16 @@ for (let i = 0; i < sales.length; i++) {
 // Return total as a template literal
 console.log(`Total Sales: $${totalSales.toLocaleString()}`);
 
+// Task 3 - While Loop
+let stock = 10; //Intial stock amount
+
+while (stock > 0) {
+   console.log(`Stock remaining: ${stock}`);
+    
+   stock--;
+}
+
+console.log("STOCK EMPTY"); //Message after stock reaches zero
+
 
 
