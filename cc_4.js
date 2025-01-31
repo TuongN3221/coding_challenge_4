@@ -12,3 +12,19 @@ if (purchaseAmount > 100) {
 
 console.log(`Final amount after discount: $${finalAmount.toFixed(2)}`);
 
+// Task 2 - For Loop
+const sales = [120, 85, 200, 150, 90, 400];// Declares array of sales
+
+let totalSales = 0;// Sets up empty variable of sales
+
+//For loop to calculate total sales
+for (let i = 0; i < sales.length; i++) {
+    totalSales += sales[i]
+    
+}
+
+// Return total as a template literal
+console.log(`Total Sales: $${totalSales.toLocaleString()}`);
+
+
+
