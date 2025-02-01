@@ -60,4 +60,11 @@ for (const property in employee) {
     // ${property} inserts the name while ${employee[property]} access the value of the property
 };
 
+// Task 6 - Product Listings
+let products = ["Haddock", "Halibut", "Porgy"];// Declares array of fish
+
+for (const product of products) {
+    
+    console.log(`Product: ${product}`);
+};// For...of loop to display each element
 
