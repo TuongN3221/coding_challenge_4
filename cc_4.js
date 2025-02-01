@@ -68,3 +68,11 @@ for (const product of products) {
     console.log(`Product: ${product}`);
 };// For...of loop to display each element
 
+// Task 7 - Order Processing
+let orders = [111, 222, 333, 444];// Declares array of orders
+
+orders.forEach(element => {
+    // Logs each order individually
+    console.log(`Order Number: ${element}`)
+});
+
