@@ -76,3 +76,19 @@ orders.forEach(element => {
     console.log(`Order Number: ${element}`)
 });
 
+// Task 8 - Tax Calculation
+//Declares the amount and tax percentage 
+const amount = 400;
+const taxRate = 99; 
+const tax = calculateTax(amount, taxRate);
+
+
+function calculateTax(amount, taxRate) {
+    // Calculate tax
+    const tax = amount * (taxRate / 100);
+
+    // Logs results
+    console.log(`Tax on $${amount} at ${taxRate}%: $${tax.toFixed(2)}`);
+
+    return tax;
+};
