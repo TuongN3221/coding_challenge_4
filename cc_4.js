@@ -1,16 +1,15 @@
 // Task 1 - Customer Discounts
-let purchaseAmount = 200;// Declares variable with a value
-// Assume a discount of 10% will be applied
+let purchaseAmount = 300;// Declares amount
+let finalAmount = purchaseAmount;
+const discount = 0.1;// declares discount
 
-//If statement that will apply discount if amount is over $100
-let finalAmount;
 if (purchaseAmount > 100) {
-    finalAmount = purchaseAmount * 0.1
-} else {
-    finalAmount = purchaseAmount;// Final total if discount requirements aren't met
-};
+    finalAmount = purchaseAmount * discount;
 
+}
 console.log(`Final amount after discount: $${finalAmount.toFixed(2)}`);
+
+
 
 // Task 2 - Sales Report
 const sales = [120, 85, 200, 150, 90, 400];// Declares array of sales
@@ -27,15 +26,15 @@ for (let i = 0; i < sales.length; i++) {
 console.log(`Total Sales: $${totalSales.toLocaleString()}`);
 
 // Task 3 - Inventory Depletion
-let stock = 10; //Intial stock amount
+let fishStock = 10; //Intial stock amount
 
-while (stock > 0) {
-   console.log(`Stock remaining: ${stock}`);
+while (fishStock > 0) {
+   console.log(`Stock remaining: ${fishStock}`);
     
-   stock--;
+   fishStock--;
 }
 
-console.log("STOCK EMPTY"); //Message after stock reaches zero
+console.log("STOCK EMPTY -- GO OUT AND FISH FOR MORE"); //Message after stock reaches zero
 
 // Task 4 - Customer Survey
 let responses = 0; // Declares responses variable
@@ -92,3 +91,20 @@ function calculateTax(amount, taxRate) {
 
     return tax;
 };
+
+// Task 9 - Discount Application
+const price = 450000;// sets up price 
+const discountPercent = 0.6; // sets up discount
+
+const applyDiscount = function (price, discountPercent) {
+    //Calculates discount amount
+    const discountAmount = price * (discountPercent)
+
+    const discountedPrice = price - discountAmount
+    return discountedPrice;
+}; // Sets up applyDiscount function
+
+// Calls the function to display the final price
+const finalPrice = applyDiscount(price, discountPercent);
+
+console.log(`Price after ${discountPercent}% discount: $${finalPrice.toFixed(2)}`);
