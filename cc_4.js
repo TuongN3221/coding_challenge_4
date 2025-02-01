@@ -45,3 +45,16 @@ do {
 } while (responses < 3);// Logs responses up to 3
 
 console.log("Collection Complete.");
+
+// Task 5 - Employee Information
+let employee = {
+    name: "Alice",
+    position: "Manager",
+    salary: 75000
+
+};
+
+for (const property in employee) {
+
+    console.log(`${property}: ${employee[property]}`);
+};
