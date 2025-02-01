@@ -52,9 +52,12 @@ let employee = {
     position: "Manager",
     salary: 75000
 
-};
+};// Declares object employee
 
 for (const property in employee) {
 
     console.log(`${property}: ${employee[property]}`);
+    // ${property} inserts the name while ${employee[property]} access the value of the property
 };
+
+
