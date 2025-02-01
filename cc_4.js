@@ -1,4 +1,4 @@
-// Task 1 - If Statements
+// Task 1 - Customer Discounts
 let purchaseAmount = 200;// Declares variable with a value
 // Assume a discount of 10% will be applied
 
@@ -12,7 +12,7 @@ if (purchaseAmount > 100) {
 
 console.log(`Final amount after discount: $${finalAmount.toFixed(2)}`);
 
-// Task 2 - For Loop
+// Task 2 - Sales Report
 const sales = [120, 85, 200, 150, 90, 400];// Declares array of sales
 
 let totalSales = 0;// Sets up empty variable of sales
@@ -26,7 +26,7 @@ for (let i = 0; i < sales.length; i++) {
 // Return total as a template literal
 console.log(`Total Sales: $${totalSales.toLocaleString()}`);
 
-// Task 3 - While Loop
+// Task 3 - Inventory Depletion
 let stock = 10; //Intial stock amount
 
 while (stock > 0) {
@@ -37,5 +37,11 @@ while (stock > 0) {
 
 console.log("STOCK EMPTY"); //Message after stock reaches zero
 
+// Task 4 - Customer Survey
+let responses = 0; // Declares responses variable
+do {
+    // logs responses 
+    console.log(`Collect ${responses} responses so far...`)
+} while (responses < 3);// Logs responses up to 3
 
-
+console.log("Collection Complete.");
